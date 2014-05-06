@@ -49,11 +49,12 @@
 (defn rpm
   "Create an RPM"
   [{{:keys [summary group name target-arch target-os target-vendor mappings
-            prefix preinstall postinstall preremove postremove requires provides
+            prefix preinstall postinstall preremove postremove release requires provides
             conflicts workarea]} :rpm
-    :keys [version]}]
+    :keys [version]} & keys]
   (let [mojo (createBaseMojo)]
     (set-mojo! mojo "projversion" version)
+    (set-mojo! mojo "release" release)
     (set-mojo! mojo "name" name)
     (set-mojo! mojo "summary" summary)
     (set-mojo! mojo "group" group)
