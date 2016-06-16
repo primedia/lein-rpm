@@ -1,4 +1,4 @@
-(defproject lein-rpm "0.0.7-SNAPSHOT"
+(defproject lein-rpm "0.0.7"
   :description "Create an RPM"
   :url "https://github.com/rentpath/lein-rpm"
   :license {:name "Eclipse Public License"
