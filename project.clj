@@ -1,4 +1,4 @@
-(defproject lein-rpm "0.0.6-SNAPSHOT"
+(defproject lein-rpm "0.0.7-SNAPSHOT"
   :description "Create an RPM"
   :dependencies [[org.codehaus.mojo/rpm-maven-plugin "2.1-alpha-1"]
                  [clj-yaml "0.4.1-SNAPSHOT"]
