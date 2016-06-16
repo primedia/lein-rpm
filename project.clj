@@ -6,7 +6,9 @@
   :eval-in-leiningen true
   :plugins [[lein-pprint "1.1.1"]]
 
-  :repositories [["primedia" {:url "http://nexus.idg.primedia.com/nexus/content/repositories/primedia"
-                              :sign-releases false}]
+  :repositories [["releases" {:url "http://nexus.idg.primedia.com/nexus/content/repositories/primedia"
+                              :sign-releases false
+                              :username [:gpg :env/nexus_username]
+                              :password [:gpg :env/nexus_password]}]
                  ["snapshots" {:url "http://nexus.idg.primedia.com/nexus/content/repositories/snapshots"
                                :sign-releases false}]])
